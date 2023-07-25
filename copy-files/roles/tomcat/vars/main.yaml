@@ -1,0 +1,4 @@
+---
+server_name: main_playbook_local_host
+prt: 9898
+inside_role_tasks: inside_role_tasks

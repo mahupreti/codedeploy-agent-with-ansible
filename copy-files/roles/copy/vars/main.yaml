@@ -1,0 +1,4 @@
+---
+web_server : local_server
+where: main-playbook
+fruit: watermelon

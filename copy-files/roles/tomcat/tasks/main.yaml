@@ -1,0 +1,7 @@
+---
+- name: template file moving from {{ inside_role_tasks }}
+  
+  template:
+    
+    src: my_app.conf.j2
+    dest: /home/mahesh/Desktop/java8project/demo/ansible-first/my_file.txt

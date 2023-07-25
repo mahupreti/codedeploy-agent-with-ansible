@@ -1,0 +1,16 @@
+# ---
+
+# - name: From copy roles (this is for testing)
+#   copy:
+#     content: "I am from copy"
+#     dest: /home/mahesh/Desktop/java8project/demo/ansible-first/copy.txt
+#     # src: target/demo-0.0.1-SNAPSHOT.war
+#     # dest: /home/mahesh/tomcat/webapps
+#     # owner: mahesh
+#     # group: mahesh
+
+---
+- name: template file moving from {{ web_server }} {{ fruit }}
+  template:    
+    src: my_app.conf.j2
+    dest: /home/mahesh/Desktop/ansible-running-codedeploy/copied.txt

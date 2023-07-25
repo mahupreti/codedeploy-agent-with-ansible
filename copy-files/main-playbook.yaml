@@ -1,0 +1,8 @@
+---
+- name: Example ansible playbook
+  hosts: localserver
+  connection: local
+
+  roles:
+    - copy
+     

@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/mahesh/Desktop/ansible-running-codedeploy/copy-files1
+    permissions: '755'
+    owner:
+      user: mahesh
+      group: mahesh
+hooks:
+  BeforeInstall:
+    - location: before_install.sh
+      timeout: 300
+  ApplicationStart:
+    - location: application_start.sh
+      timeout: 300
